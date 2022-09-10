@@ -5,12 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/supheader.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/subheader.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Document</title>
-
 </head>
   <body> 
     <div class="supheader">
@@ -33,11 +37,24 @@
           <div class="header-burger">
             <span></span>
           </div>
+          <div class="block-hidden">
+            <span class="material-symbols-outlined icon-hidden">Search</span>
+            <span class="material-symbols-outlined icon-hidden">shopping_bag</span>
+            <span class="material-symbols-outlined icon-hidden">account_circle</span>
+          </div>
           <nav class="header-menu">
             <div class="menu-text">
-              <div class="menu-item">News</div>
-              <div class="menu-item">Info</div>
-              <div class="menu-item">Contact</div>
+              <div class="menu-item weight">News</div>
+              <div class="menu-item weight">Info</div>
+              <div class="menu-item weight">Contact</div>
+              <div class="menu-item hidden">Phones</div>
+              <div class="menu-item hidden">Tablets</div>
+              <div class="menu-item hidden">Laptops</div>
+              <div class="menu-item hidden">Accessories</div>
+              <div class="menu-item hidden">Smartwatchs</div>
+              <div class="menu-item hidden">Sale</div>
+              <div class="menu-item hidden">Electric transports</div>
+              <div class="menu-item hidden">Monitors</div>
             </div>
             <div class="menu-icon">
               <input placeholder="Search..." type="text" class="input">
@@ -46,76 +63,81 @@
               <span class="material-symbols-outlined account-icon">account_circle</span>
             </div>
           </nav>
-        </div>
+        <!-- </div> -->
         </div>
       </div>
     </header>
-      <div class="subheader"></div>
-        <ul class="list">
-          <li class="trigger">Phones
-            <ul class="sublist">
-              <li>Apple</li>
-              <li>Huawei</li>
-              <li>Samsung</li>
-              <li>Xiaomi</li>
-            </ul>
-          </li>
-          <li class="trigger">Tablets
-            <ul class="sublist">
-              <li>Apple</li>
-              <li>Huawei</li>
-              <li>Samsung</li>
-              <li>Xiaomi</li>
-            </ul>
-          </li>
-          <li class="trigger">Laptops
-            <ul class="sublist">
-              <li>HP</li>
-              <li>ASUS</li>
-              <li>Samsung</li>
-              <li>Apple</li>
-            </ul>
-          </li>
-          <li class="trigger">Accessories
-            <ul class="sublist">
-              <li>Headphones</li>
-              <li>Сases</li>
-              <li>Сharger</li>
-              <li>Protective glass</li>
-            </ul>
-          </li>
-          <li class="trigger">Smartwatchs
-            <ul class="sublist">
-              <li>Apple</li>
-              <li>Huawei</li>
-              <li>Samsung</li>
-              <li>Xiaomi</li>
-            </ul>
-          </li>
-          <li class="trigger">Sale
-            <ul class="sublist">
-              <li>Apple</li>
-              <li>Huawei</li>
-              <li>Samsung</li>
-              <li>Xiaomi</li>
-            </ul>
-          </li>
-          <li class="trigger">Electric transports
-            <ul class="sublist">
-              <li>Scooter</li>
-              <li>Skateboard</li>
-              <li>Bike</li>
-            </ul>
-          </li>
-          <li class="trigger">Monitors
-            <ul class="sublist">
-              <li>ASUS</li>
-              <li>Huawei</li>
-              <li>Samsung</li>
-              <li>LG</li>
-            </ul>
-          </li>
+    <div class="subheader"></div>
+    <ul class="list">
+      <li class="trigger">Phones
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
         </ul>
-      <!-- </div> -->
+      </li>
+      <li class="trigger">Tablets
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Laptops
+        <ul class="sublist">
+          <li>HP</li>
+          <li>ASUS</li>
+          <li>Samsung</li>
+          <li>Apple</li>
+        </ul>
+      </li>
+      <li class="trigger">Accessories
+        <ul class="sublist">
+          <li>Headphones</li>
+          <li>Сases</li>
+          <li>Сharger</li>
+          <li>Protective glass</li>
+        </ul>
+      </li>
+      <li class="trigger">Smartwatchs
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Sale
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Electric transports
+        <ul class="sublist">
+          <li>Scooter</li>
+          <li>Skateboard</li>
+          <li>Bike</li>
+        </ul>
+      </li>
+      <li class="trigger">Monitors
+        <ul class="sublist">
+          <li>ASUS</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>LG</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="main-page-content">
+     
+    </div>        
+
+      
+    <script src="script.js"></script>
   </body>
 </html>

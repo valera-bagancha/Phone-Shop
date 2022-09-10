@@ -1,0 +1,57 @@
+.subheader {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(69, 68, 68);
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.list {
+  max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.list li {
+  color: white;
+  margin: 12px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+  max-width: 150px;
+}
+
+.list li:hover {
+  color: rgb(217, 206, 206);
+}
+
+.sublist {
+  background-color:rgb(69, 68, 68);
+  display: none;
+  position: absolute;
+}
+
+.sublist li {
+  color: white;
+  font-size: 16px;
+  padding: 0px 35px;
+  margin: 20px 0px;
+}
+
+
+.trigger:hover > .sublist {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .subheader {
+    display: none;
+  }
+  .trigger {
+    display: none;
+  }
+}
