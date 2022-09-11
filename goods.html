@@ -1,12 +1,533 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/supheader.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/subheader.css">
+  <link rel="stylesheet" href="./styles/goodspagecontent.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
   <title>Document</title>
 </head>
   <body>
-    
+    <div class="supheader">
+      <div class="container">
+        <div class="supheader-content">
+          <div class="supheader-registration">Sign in or Registr</div>
+          <div class="supheader-helps">Helps & FAQs</div>
+          <div class="supheader-country">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="header-logo">
+            <img src="data:image/jpeg;base64,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" alt="">
+          </a>
+          <div class="header-burger">
+            <span></span>
+          </div>
+          <div class="block-hidden">
+            <span class="material-symbols-outlined icon-hidden">Search</span>
+            <span class="material-symbols-outlined icon-hidden">shopping_bag</span>
+            <span class="material-symbols-outlined icon-hidden">account_circle</span>
+          </div>
+          <nav class="header-menu">
+            <div class="menu-text">
+              <div class="menu-item weight">News</div>
+              <div class="menu-item weight">Info</div>
+              <div class="menu-item weight">Contact</div>
+              <div class="menu-item hidden">Phones</div>
+              <div class="menu-item hidden">Tablets</div>
+              <div class="menu-item hidden">Laptops</div>
+              <div class="menu-item hidden">Accessories</div>
+              <div class="menu-item hidden">Smartwatchs</div>
+              <div class="menu-item hidden">Sale</div>
+              <div class="menu-item hidden">Electric transports</div>
+              <div class="menu-item hidden">Monitors</div>
+            </div>
+            <div class="menu-icon">
+              <input placeholder="Search..." type="text" class="input">
+              <span class="material-symbols-outlined search-icon">Search</span>
+              <span class="material-symbols-outlined bag-icon">shopping_bag</span>
+              <span class="material-symbols-outlined account-icon">account_circle</span>
+            </div>
+          </nav>
+        <!-- </div> -->
+        </div>
+      </div>
+    </header>
+    <div class="subheader"></div>
+    <ul class="list">
+      <li class="trigger">Phones
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Tablets
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Laptops
+        <ul class="sublist">
+          <li>HP</li>
+          <li>ASUS</li>
+          <li>Samsung</li>
+          <li>Apple</li>
+        </ul>
+      </li>
+      <li class="trigger">Accessories
+        <ul class="sublist">
+          <li>Headphones</li>
+          <li>Сases</li>
+          <li>Сharger</li>
+          <li>Protective glass</li>
+        </ul>
+      </li>
+      <li class="trigger">Smartwatchs
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Sale
+        <ul class="sublist">
+          <li>Apple</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+        </ul>
+      </li>
+      <li class="trigger">Electric transports
+        <ul class="sublist">
+          <li>Scooter</li>
+          <li>Skateboard</li>
+          <li>Bike</li>
+        </ul>
+      </li>
+      <li class="trigger">Monitors
+        <ul class="sublist">
+          <li>ASUS</li>
+          <li>Huawei</li>
+          <li>Samsung</li>
+          <li>LG</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="goods-page-content">
+      <div class="container">
+        <div class="main-blok">
+          <div class="filters">
+            <div class="filter-hidden">
+              <span class="material-symbols-outlined">
+                filter_list
+                </span>
+              <span class="filter-hidden-text">Filter</span>
+            </div>
+            <div class="main-camera">
+              <p class="title">Main camera</p>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Up to 10 MP 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> 10.1 MP to 16 MP
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> 16.1 MP to 20 MP 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Form 20.1 MP 
+                <span class="check-box"></span>
+              </label>
+            </div>
+            <div class="main-camera">
+              <p class="title">Model</p>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> iPhone 14 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Iphone 14 Pro
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox">Iphone 13  
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Iphone 13 Pro 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Iphone 12 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Iphone 12 Pro 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Iphone 11 
+                <span class="check-box"></span>
+              </label>
+            </div>
+            <div class="main-camera">
+              <p class="title">Screen type</p>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> TFT 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> TFT LSD
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox">IPS  
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> OLED 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> AMOLED
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Fluid AMOLED
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Dinamic AMOLED 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Super AMOLED
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> PLS
+                <span class="check-box"></span>
+              </label>
+            </div>
+            <div class="main-camera">
+              <p class="title">Color</p>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Black 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> White
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox">Space Gray  
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Green 
+                <span class="check-box"></span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="camera" class="input-checkbox"> Red
+                <span class="check-box"></span>
+              </label>
+            </div>
+          </div>
+          <div class="products">
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/7/d749071f06dda6d5a6c16531d9ed11e2.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">64 review</span>
+                <p class="title-product">Apple iPhone 13 Mini 256GB</p>
+                <p class="title-product">34 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/b/5/b5897625c456d30cabe7c1defa86a2cb.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="review">95 review</span>
+                <p class="title-product">Apple iPhone 13 Pro Max 512GB Gold</p>
+                <p class="title-product">61 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/9/0/901bc8bf4f2bcecd094f0fa75151a06c.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">37 review</span>
+                <p class="title-product">Apple iPhone 13 Mini 256GB Pink (MLK73)</p>
+                <p class="title-product">34 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+            <div class="card-icon">
+              <img src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/4/3/4304fca57a7b0459f70a77c21150ce7a.jpg&w=256&q=60" alt="">
+            </div>
+            <div class="card-text">
+              <span class="fa fa-star checked-star"></span>
+              <span class="fa fa-star checked-star"></span>
+              <span class="fa fa-star checked-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="review">107 review</span>
+              <p class="title-product">Apple iPhone 11 128Gb Black</p>
+              <p class="title-product">24 999 <span>UAH</span></p>
+              <div class="buy">
+                <button><span class="material-symbols-outlined shopping-cart">
+                  shopping_cart
+                  </span>Buy</button>
+                <span class="material-symbols-outlined heart">
+                  favorite
+                  </span>
+              </div>
+            </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/a/e/ae87933aa337b759f772e0f6ecdfdb13.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">77 review</span>
+                <p class="title-product">Apple iPhone 13 Pro 128GB Sierra Blue</p>
+                <p class="title-product">44 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/4/840753c3ea33e1cc274dc4bc5abf41b2.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">7 review</span>
+                <p class="title-product">Apple iPhone SE 2022 256GB</p>
+                <p class="title-product">14 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/7/d75d4340caebeaef61aea69f18598021.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">87 review</span>
+                <p class="title-product">Apple iPhone 12 64GB PRODUCT Red</p>
+                <p class="title-product">26 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/7/b/7bb37475ba57263c9f97b4c1013979bf.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">27 review</span>
+                <p class="title-product">Apple iPhone 14 256GB Blue (MPWP3)</p>
+                <p class="title-product">15 699 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="https://i.citrus.world/imgcache/size_180/uploads/shop/3/0/3059bc034e41c76401f3a6b47ab5b504.jpg" alt="">
+              </div>
+              <div class="card-text">
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star checked-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">68 review</span>
+                <p class="title-product">Apple iPhone 13 256GB Blue (MLQA3)</p>
+                <p class="title-product">39 999 <span>UAH</span></p>
+                <div class="buy">
+                  <button><span class="material-symbols-outlined shopping-cart">
+                    shopping_cart
+                    </span>Buy</button>
+                  <span class="material-symbols-outlined heart">
+                    favorite
+                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="first-group">
+            <div class="first-item">
+              <ul class="footer-list">
+                <li><span class="material-symbols-outlined icon-footer">location_automation</span> Find a store</li>
+                <li>  <span class="material-symbols-outlined icon-footer">public</span>
+                  Check our network</li>
+                <li> <span class="material-symbols-outlined icon-footer">account_circle</span> Sign in</li>
+                <li><span class="material-symbols-outlined icon-footer">local_shipping</span> Track my order</li>
+                <li><span class="material-symbols-outlined icon-footer">search</span> 
+                  Search</li>
+              </ul>
+            </div>
+            <div class="second-item">
+              <h3>Bestseller</h3>
+              <ul>
+                <li>iPhone 14 Pro Max</li>
+                <li>iPhone 14 Pro</li>
+                <li>iPhone 14 Plus</li>
+                <li>iPhone 14</li>
+                <li>Apple Watch Series 7</li>
+                <li>Samsung Galaxy S22 Ultra</li>
+                <li>Samsung Galaxy A32 5G</li>
+              </ul>
+            </div>
+            <div class="third-item">
+              <h3>Help and support</h3>
+              <ul>
+                <li>Help</li>
+                <li>Contact us</li>
+                <li>Collection and delivery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="second-group">
+            <span class="material-symbols-outlined">favorite</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
+            <span class="material-symbols-outlined">accessible_forward</span>
+          </div>
+          <div class="third-group">
+            <p>About O2 | Our Blueprint | Careers | News & PR | Sponsorship | Virgin Media and O2</p>
+            <p>Access for all | Terms & Conditions | Privacy policy | Cookie policy | Modern Slavery Statement
+              © 2022 Telefónica UK Limited</p>
+            <p>In relation to consumer credit, Telefónica UK Limited is authorised and regulated by the Financial Conduct Authority (Reference Number 718822)</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
