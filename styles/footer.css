@@ -1,0 +1,76 @@
+.footer {
+  background-color: black;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.first-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.first-item ul li {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 17px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.second-item ul li {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.second-item h3 {
+  margin-bottom: 27px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.third-item h3 {
+  margin-bottom: 27px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.third-item ul li {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-footer {
+  color: white;
+  position: absolute;
+  left: 0;
+}
+
+.first-group {
+  color: white;
+}
+
+.second-group {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.third-group p {
+  color: white;
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.container-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
