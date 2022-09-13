@@ -221,12 +221,15 @@
     flex-direction: column;
     align-items: center;
   }
+  .title-product-name{
+    line-height: 20px;
+  }
   .my-bag {
     margin-bottom: 17px;
-    min-width: 400px;
+    min-width: 320px;
   }
   .total {
-    min-width: 280px;
+    min-width: 320px;
   }
   .basket-content {
     display: flex;

@@ -226,3 +226,15 @@ button .shopping-cart {
     justify-content: center;
   }
 }
+
+@media (max-width: 767px) {
+  .block-hidden {
+    display: block;
+    z-index: 41;
+    display: flex;
+    margin-right: 10%;
+    position: fixed;
+    top: 13;
+    right: 0;
+  }
+}
